@@ -1,0 +1,148 @@
+body{
+    background: #00A99E;
+}
+.clock{
+    height: 200px;
+    width: 200px;
+    background: white;
+    border-radius: 200px;
+    border: 10px solid #67D2C8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.clock .top{
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: black;
+    left: 0;
+    right: 0;
+    top:0;
+    margin: 0 auto;
+}
+.clock .right{
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: black;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.clock .bottom{
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background: black;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+.clock .left{
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    background: black;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.clock .center{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: black;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.clock .shadow{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.1));
+    opacity: 0.1;
+    left: -10px;
+    right: 10px;
+    top: 110px;
+    bottom: -110px;
+    margin: auto 0;
+    transform-origin: top;
+    transform:rotate(-45deg);
+}
+
+@keyframes secondChange{
+    to{
+        transform:rotate(360deg)
+    }
+}
+
+.clock .hour{
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    background: black;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 100px;
+    margin: 0 auto;
+    -webkit-transform-origin:bottom ;
+    -moz-transform-origin:bottom ;
+    -ms-transform-origin:bottom ;
+    -o-transform-origin:bottom ;
+    transform-origin: bottom;
+    /*transform:rotate(30deg);*/
+    animation:secondChange 216000s infinite linear;
+    z-index: 200;
+}
+.clock .minute{
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    background: black;
+    left: 0;
+    right: 0;
+    top: 30px;
+    bottom: 100px;
+    margin: 0 auto;
+    -webkit-transform-origin:bottom ;
+    -moz-transform-origin:bottom ;
+    -ms-transform-origin:bottom ;
+    -o-transform-origin:bottom ;
+    transform-origin: bottom;
+    /*transform:rotate(30deg);*/
+    animation:secondChange 3600s infinite linear;
+    z-index: 200;
+}
+.clock .second{
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background: red;
+    left: 0;
+    right: 0;
+    top: 40px;
+    bottom: 100px;
+    margin: 0 auto;
+    -webkit-transform-origin:bottom ;
+    -moz-transform-origin:bottom ;
+    -ms-transform-origin:bottom ;
+    -o-transform-origin:bottom ;
+    transform-origin: bottom;
+    /*transform:rotate(60deg);*/
+    animation:secondChange 60s infinite linear;
+    z-index: 100;
+    /*opacity: 0;*/
+}
+
