@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cube 3d</title>
+	<style type="text/css">
+	.container{
+		perspective: 1000px;
+	}
+	.piece-box{
+		position: relative;
+		width: 200px;
+		height: 200px;
+		margin: 300px auto;
+		perspective-origin: 50% 50%;
+		transform-style: preserve-3d;
+		animation: pieceRotate 5s;
+	}
+	.piece{
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		opacity: 0.5;
+	}
+	.piece-1{
+		background: #ff6666;
+		transform: rotateY(0deg) translateZ(173.2px);
+		animation: piece1Rotate 5s 5s;
+		animation-fill-mode: forwards;
+	}
+	.piece-2{
+		background: #ffff00;
+		transform: rotateY(60deg) translateZ(173.2px) ;
+		animation: piece2Rotate 5s 5s;
+		animation-fill-mode: forwards;
+	}
+	.piece-3{
+		background: #006699;
+		transform: rotateY(120deg) translateZ(173.2px);
+		animation: piece3Rotate 5s 5s;
+		animation-fill-mode: forwards;
+	}
+	.piece-4{
+		background: #009999;
+		transform: rotateY(180deg) translateZ(173.2px);
+		animation: piece4Rotate 5s 5s;
+		animation-fill-mode: forwards;
+	}
+	.piece-5{
+		background: #ff0033;
+		transform: rotateY(240deg) translateZ(173.2px);
+		animation: piece5Rotate 5s 5s;
+		animation-fill-mode: forwards;
+	}
+	.piece-6{
+		background: #ff6600;
+		transform: rotateY(300deg) translateZ(173.2px);
+		animation: piece6Rotate 5s 5s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes pieceRotate{
+		0% {
+			transform: rotateY(0deg);
+		}
+		100% {
+			transform: rotateY(360deg);
+		}
+
+	}
+	@keyframes piece1Rotate{
+		0% {
+			transform: rotateY(0deg) translateZ(173.2px);
+		}
+		100% {
+			transform: rotateY(0deg) translateZ(100px);
+		}
+	}
+	@keyframes piece2Rotate{
+		0% {
+			transform: rotateY(60deg) translateZ(173.2px);
+		}
+		100% {
+			transform: rotateY(90deg) translateZ(100px);
+		}
+	}
+	@keyframes piece3Rotate{
+		0% {
+			transform: rotateY(120deg) translateZ(173.2px);
+		}
+		100% {
+			transform: rotateX(90deg) translateZ(100px);
+		}
+	}
+	@keyframes piece4Rotate{
+		0% {
+			transform: rotateY(180deg) translateZ(173.2px);
+		}
+		100% {
+			transform: rotateY(180deg) translateZ(100px);
+		}
+	}
+	@keyframes piece5Rotate{
+		0% {
+			transform: rotateY(240deg) translateZ(173.2px);
+		}
+		100% {
+			transform: rotateX(270deg) translateZ(100px);
+		}
+	}
+	@keyframes piece6Rotate{
+		0% {
+			transform: rotateY(300deg) translateZ(173.2px);
+		}
+		100% {
+			transform: rotateY(270deg) translateZ(100px);
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="piece-box">
+			<div class="piece piece-1"></div>
+			<div class="piece piece-2"></div>
+			<div class="piece piece-3"></div>
+			<div class="piece piece-4"></div>
+			<div class="piece piece-5"></div>
+			<div class="piece piece-6"></div>
+		</div>
+	</div>
+
+</body>
+</html>
