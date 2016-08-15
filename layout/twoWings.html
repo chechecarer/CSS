@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		font-size: 1.5em;
+	}
+	.header,.footer{
+		background-color: #000;
+		height: 30px;
+		color: white;
+	}
+	div{
+		text-align: center;
+	}
+	.main{
+		background-color: #666;
+	}
+	.sub{
+		background-color: #44fa44;
+	}
+	.extra{
+		background-color: #3dbdff;
+	}
+	.main{
+		width: 100%;
+		float: left;
+	}
+	.main-wrapper{
+		margin: 0 200px 0 100px;
+	}
+	.sub{
+		float: left;
+		width: 100px;
+		margin-left: -100%;
+	}
+	.extra{
+		float: left;
+		width: 200px;
+		margin-left: -200px;
+	}
+	.footer{
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+<div class="header">header</div>
+<div class="container">
+	<div class="main">
+		<div class="main-wrapper">main</div>
+	</div>
+	<div class="sub">sub</div>
+	<div class="extra">extra</div>
+</div>
+<div class="footer">footer</div>
+</body>
+</html>
