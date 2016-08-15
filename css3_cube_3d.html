@@ -14,6 +14,11 @@
 		perspective-origin: 50% 50%;
 		transform-style: preserve-3d;
 		animation: pieceRotate 5s;
+
+	}
+	.piece-box2{
+		transform-style: preserve-3d;
+		animation: boxRotate 5s 10s;
 	}
 	.piece{
 		position: absolute;
@@ -114,17 +119,29 @@
 			transform: rotateY(270deg) translateZ(100px);
 		}
 	}
+
+	@keyframes boxRotate{
+		0% {
+			transform: rotateX(0deg) rotateY(0deg);
+		}
+		100% {
+			transform: rotateX(360deg) rotateY(360deg);
+		}
+	}
 	</style>
 </head>
 <body>
 	<div class="container">
 		<div class="piece-box">
-			<div class="piece piece-1"></div>
-			<div class="piece piece-2"></div>
-			<div class="piece piece-3"></div>
-			<div class="piece piece-4"></div>
-			<div class="piece piece-5"></div>
-			<div class="piece piece-6"></div>
+			<div class="piece-box2">
+				<div class="piece piece-1"></div>
+				<div class="piece piece-2"></div>
+				<div class="piece piece-3"></div>
+				<div class="piece piece-4"></div>
+				<div class="piece piece-5"></div>
+				<div class="piece piece-6"></div>
+			</div>
+			
 		</div>
 	</div>
 
